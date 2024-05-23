@@ -1,0 +1,61 @@
+// PALLETE
+$color1: #252A34;
+$color2: #08D9D6;
+$color3: #FF2E63;
+$color4: #EAEAEA;
+
+// Neutral colors
+$surface: hsl(0, 0%, 100%);
+$on-surface: hsl(0, 0%, 14%);
+$on-surface-variant: hsl(0, 0%, 30%);
+$surface-container-lowest: hsl(0, 0%, 97%);
+$surface-container-low: hsl(0, 0%, 95%);
+$surface-container: hsl(0, 0%, 90%);
+$surface-container-high: hsl(0, 0%, 85%);
+$surface-container-highest: hsl(0, 0%, 80%);
+$surface-inverse: hsl(0, 0%, 14%);
+$on-surface-inverse: hsl(0, 0%, 100%);
+$on-surface-inverse-dim: hsl(0, 0%, 85%);
+// $inverse-on-surface-variant: hsl(0, 0%, 80%);
+
+$outline: hsl(0, 0%, 75%);
+$outline-variant: hsl(0, 0%, 80%);
+
+// Accent colors
+$primary: hsl(44, 100%, 70%);
+$primary10:hsl(44, 100%, 10%);
+$primary20:hsl(44, 90%, 20%);
+$primary30:hsl(44, 80%, 30%);
+$primary40:hsl(44, 80%, 40%);
+$primary50:hsl(44, 80%, 50%);
+$primary60:hsl(44, 80%, 60%);
+$primary70:hsl(44, 100%, 70%);
+$primary80:hsl(44, 100%, 80%);
+$primary90:hsl(44, 100%, 90%);
+$primary95:hsl(44, 100%, 95%);
+$on-primary: hsl(0, 0%, 14%);
+$on-primary-url: '%23242424';
+$primary-container: hsl(0, 0%, 14%);
+$on-primary-container: hsl(44, 100%, 70%);
+$primary-variant:hsl(44, 85%, 65%);
+
+$secondary: hsl(0, 0%, 14%);
+$on-secondary: hsl(0, 0%, 100%);
+$secondary-container: hsl(0, 0%, 90%);
+$on-secondary-container: hsl(0, 0%, 14%);
+$secondary-container-variant: hsl(0, 0%, 80%);
+
+
+$tertiary: hsl(20, 86%, 59%);
+$on-tertiary: hsl(20, 86%, 90%);
+$tertiary-container: hsl(20, 86%, 70%);
+$on-tertiary-container: hsl(20, 86%, 30%);
+
+$error: hsl(360, 78%, 50%);
+$on-error: hsl(0, 100%, 95%);
+$error-container: hsl(360, 78%, 62%);
+$on-error-container: hsl(360, 78%, 20%);
+
+// Gradients
+$add-dark-blue: linear-gradient(252.85deg, #0e0e25 0%, #0e0e25 100%);
+$accent-gradient: linear-gradient(to right, #ffa751, #ffe259);
