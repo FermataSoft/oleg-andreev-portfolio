@@ -1,6 +1,7 @@
 <template>
   <div class="app">
     <SectionHero></SectionHero>
+    <SectionAbout></SectionAbout>
     <SectionWorks></SectionWorks>
     <SectionSocialLinks></SectionSocialLinks>
     <SectionFooter></SectionFooter>
