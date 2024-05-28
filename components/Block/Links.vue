@@ -16,6 +16,9 @@
     >
       <IconInstagram></IconInstagram>
     </a>
+    <a href="https://github.com/FermataSoft" target="_blank" rel="noopener noreferrer">
+      <IconGitHub></IconGitHub>
+    </a>
     <a href="https://t.me/makewonder" target="_blank" rel="noopener noreferrer">
       <IconTelegram></IconTelegram>
     </a>
