@@ -1,3 +1,5 @@
+$content-width: 1250px;
+
 @mixin breakpoint($point) {
   @if $point == xl {
     @media (min-width: 2000px) {

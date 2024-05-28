@@ -8,7 +8,8 @@
     <header class="hero__title">
       <div class="hero__title-text-block">
         <h1>Олег Андреев</h1>
-        <h2>Front-end разработчик</h2>
+        <h2>{{ "<Front-end разработчик />" }}</h2>
+        <ElementCV class="hero__icon-cv"></ElementCV>
       </div>
     </header>
     <div class="hero__author-link">
@@ -27,7 +28,7 @@
 
 .hero__image {
   width: 100%;
-  height: 500px;
+  height: 70vh;
   overflow: hidden;
 
   img {
@@ -35,21 +36,18 @@
     height: 100%;
     object-fit: cover;
     object-position: center;
+    mask-image: linear-gradient(#000 40%, transparent);
   }
 }
 
 .hero__title {
   position: relative;
   position: absolute;
-  top: 130px;
+  top: 40%;
   left: 30%;
-  // width: 800px;
-  // height: 250px;
-  transform: translate(-50%, -50%);
   color: $on-surface;
   backdrop-filter: blur(50px);
   border-radius: 20px;
-  // border: 10px solid rgba(255, 255, 255, 1);
 
   .hero__title-text-block {
     position: absolute;
@@ -60,7 +58,7 @@
     padding: 20px;
 
     h1 {
-      font-size: 10rem;
+      font-size: 8rem;
       font-weight: bold;
       z-index: 3;
     }
@@ -75,12 +73,16 @@
 
 .hero__author-link {
   position: absolute;
-  bottom: 20px;
+  bottom: 30px;
   right: 50px;
 
   a {
     color: #889cac;
     font-weight: 500;
   }
+}
+
+.hero__icon-cv {
+  margin-top: 50px;
 }
 </style>
