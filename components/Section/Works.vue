@@ -25,7 +25,7 @@ let cards = [
 </script>
 
 <template>
-  <div class="works">
+  <section class="works">
     <ElementHeader class="works__header">Проекты</ElementHeader>
     <div class="works__cards">
       <ElementCard
@@ -37,7 +37,7 @@ let cards = [
         :link="card.link"
       ></ElementCard>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

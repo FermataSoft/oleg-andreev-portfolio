@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <div class="about">
+  <section class="about">
     <ElementHeader>Обо мне</ElementHeader>
     <div class="about__description">
       <p>
@@ -12,7 +12,7 @@
       <p>В разработке использую различные технологии:</p>
       <p>Nuxt, MySQL, i18n, gsap</p>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

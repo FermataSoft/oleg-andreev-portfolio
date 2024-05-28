@@ -1,10 +1,10 @@
 <script setup></script>
 
 <template>
-  <div class="social-links">
+  <section class="social-links">
     <!-- <ElementHeader>Ссылки</ElementHeader> -->
     <BlockLinks></BlockLinks>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>

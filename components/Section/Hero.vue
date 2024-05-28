@@ -1,23 +1,23 @@
 <script setup></script>
 
 <template>
-  <div class="hero">
+  <header class="hero">
     <div class="hero__image">
       <img src="/public/hero.png" alt="" />
     </div>
-    <header class="hero__title">
+    <div class="hero__title">
       <div class="hero__title-text-block">
         <h1>Олег Андреев</h1>
         <h2>{{ "<Front-end разработчик />" }}</h2>
         <ElementCV class="hero__icon-cv"></ElementCV>
       </div>
-    </header>
+    </div>
     <div class="hero__author-link">
       <a href="https://www.behance.net/AndrVi" target="_blank"
         >Image by AndrVi</a
       >
     </div>
-  </div>
+  </header>
 </template>
 
 <style lang="scss" scoped>
