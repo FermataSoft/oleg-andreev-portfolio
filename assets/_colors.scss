@@ -7,56 +7,31 @@ $color5: #ffffff;
 $color6: #657186;
 
 // Neutral colors
-$surface: $color1;
-$on-surface: $color5;
-$on-surface-variant: hsl(0, 0%, 30%);
-$surface-container-lowest: hsl(0, 0%, 97%);
-$surface-container-low: hsl(0, 0%, 95%);
-$surface-container: hsl(0, 0%, 90%);
-$surface-container-high: hsl(0, 0%, 85%);
-$surface-container-highest: hsl(0, 0%, 80%);
-$surface-inverse: hsl(0, 0%, 14%);
-$on-surface-inverse: hsl(0, 0%, 100%);
-$on-surface-inverse-dim: hsl(0, 0%, 85%);
-// $inverse-on-surface-variant: hsl(0, 0%, 80%);
+$surface: #252a34;
+$on-surface: #ffffff;
+$surface-inverse: #ffffff;
+$on-surface-inverse: #252a34;
 
 $outline: hsl(0, 0%, 75%);
 $outline-variant: hsl(0, 0%, 80%);
 
 // Accent colors
-$primary: hsl(44, 100%, 70%);
-$primary10: hsl(44, 100%, 10%);
-$primary20: hsl(44, 90%, 20%);
-$primary30: hsl(44, 80%, 30%);
-$primary40: hsl(44, 80%, 40%);
-$primary50: hsl(44, 80%, 50%);
-$primary60: hsl(44, 80%, 60%);
-$primary70: hsl(44, 100%, 70%);
-$primary80: hsl(44, 100%, 80%);
-$primary90: hsl(44, 100%, 90%);
-$primary95: hsl(44, 100%, 95%);
-$on-primary: hsl(0, 0%, 14%);
-$on-primary-url: "%23242424";
-$primary-container: hsl(0, 0%, 14%);
-$on-primary-container: hsl(44, 100%, 70%);
-$primary-variant: hsl(44, 85%, 65%);
+$primary: #08d9d6;
+$on-primary: #252a34;
+$primary-variant: #06bdba;
+$primary-variant-darker: #049997;
 
-$secondary: hsl(0, 0%, 14%);
-$on-secondary: hsl(0, 0%, 100%);
-$secondary-container: hsl(0, 0%, 90%);
-$on-secondary-container: hsl(0, 0%, 14%);
-$secondary-container-variant: hsl(0, 0%, 80%);
+$secondary: #657186;
+$on-secondary: #eaeaea;
+$secondary-variant: #78869d;
+$secondary-variant-darker: #465163;
 
-$tertiary: hsl(20, 86%, 59%);
-$on-tertiary: hsl(20, 86%, 90%);
-$tertiary-container: hsl(20, 86%, 70%);
-$on-tertiary-container: hsl(20, 86%, 30%);
+$tertiary: #ff2e63;
+$on-tertiary: #252a34;
 
-$error: hsl(360, 78%, 50%);
-$on-error: hsl(0, 100%, 95%);
-$error-container: hsl(360, 78%, 62%);
-$on-error-container: hsl(360, 78%, 20%);
+$error: #ff2e35;
+$on-error: #252a34;
 
 // Gradients
-$add-dark-blue: linear-gradient(250deg, $color1 0%, $color6 100%);
-$accent-gradient: linear-gradient(to right, #ffa751, #ffe259);
+$primary-gradient: linear-gradient(to right, #08d9d6, #ff2e63);
+$secondary-gradient: linear-gradient(250deg, #08d9d6 0%, #657186 50%, #08d9d6 100%);
