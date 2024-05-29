@@ -16,6 +16,9 @@
     >
       <IconInstagram></IconInstagram>
     </a>
+    <a href="https://github.com/FermataSoft" target="_blank" rel="noopener noreferrer">
+      <IconGitHub></IconGitHub>
+    </a>
     <a href="https://t.me/makewonder" target="_blank" rel="noopener noreferrer">
       <IconTelegram></IconTelegram>
     </a>
@@ -35,10 +38,15 @@
     color: $secondary;
     position: relative;
 
+    @include breakpoint(xs) {
+      width: 36px;
+      height: 36px;
+    }
+
     &:hover {
       color: $on-surface;
     }
-
+    
     @keyframes hover-effect {
       0% {
         transform: translate(0, 0px);
@@ -57,14 +65,12 @@
     svg {
       width: 100%;
       height: auto;
-      // transition: transform 0.3s ease-in-out, color 0.3s;
     }
 
     &:hover {
       img,
       svg {
         animation: hover-effect ease-out 0.4s;
-        // transform: translate(0, -2px);
       }
     }
   }

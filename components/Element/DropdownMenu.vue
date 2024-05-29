@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <Transition>
-    <div class="dropdown-menu" v-if="isActive">
+    <div class="dropdown-menu" v-show="isActive">
       <div class="dropdown-menu__items">
         <a
           class="dropdown-menu__item"
@@ -24,12 +24,12 @@ defineProps({
 <style lang="scss" scoped>
 .dropdown-menu {
   position: relative;
-  width: max-content;
   transition: all 0.3s;
 }
 
 .dropdown-menu__items {
   position: absolute;
+  right: 0;
   display: flex;
   flex-direction: column;
   background-color: $secondary;
@@ -59,7 +59,7 @@ defineProps({
   content: "";
   position: absolute;
   top: 20px;
-  left: -8px;
+  right: -8px;
   transform: rotate(45deg);
   width: 30px;
   height: 30px;

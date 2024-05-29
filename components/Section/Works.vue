@@ -25,7 +25,7 @@ let cards = [
 </script>
 
 <template>
-  <div class="works">
+  <section class="works">
     <ElementHeader class="works__header">Проекты</ElementHeader>
     <div class="works__cards">
       <ElementCard
@@ -37,7 +37,7 @@ let cards = [
         :link="card.link"
       ></ElementCard>
     </div>
-  </div>
+  </section>
 </template>
 
 <style lang="scss" scoped>
@@ -47,16 +47,16 @@ let cards = [
   margin: 0 auto;
 }
 
-.works__header {
-  margin-bottom: 40px;
-}
-
 .works__cards {
   display: flex;
   justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   column-gap: 50px;
-  row-gap: 100px;
+  row-gap: 40px;
+
+  @include breakpoint(1300px) {
+    column-gap: 30px;
+  }
 }
 </style>

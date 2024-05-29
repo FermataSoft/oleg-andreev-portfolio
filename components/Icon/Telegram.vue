@@ -3,7 +3,7 @@
     class="icon"
     xmlns="http://www.w3.org/2000/svg"
     xmlns:xlink="http://www.w3.org/1999/xlink"
-    viewBox="-3 -3 70 70"
+    viewBox="-3 -3 71 71"
     fill="currentColor"
   >
     <defs>

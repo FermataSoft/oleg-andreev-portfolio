@@ -1,18 +1,18 @@
 <script setup></script>
 
 <template>
-  <div class="footer">
-    <p class="copyright-text">
+  <footer class="footer">
+    <p class="footer__copyright-text">
       Copyright © 2024
       <a href="https://www.linkedin.com/in/olegandreev/" target="_blank"
         >Fermata Soft</a
       >. Все права защищены.
     </p>
-  </div>
+  </footer>
 </template>
 
 <style lang="scss" scoped>
-.copyright-text {
+.footer__copyright-text {
   font-size: 1.4rem;
   font-weight: 100;
   color: $on-surface;
@@ -22,6 +22,7 @@
 
   @include breakpoint(sm) {
     font-size: 1.2rem;
+    margin-top: 30px;
   }
 
   a {

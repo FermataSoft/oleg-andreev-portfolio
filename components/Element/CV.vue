@@ -15,22 +15,13 @@ let isMenuActive = ref(false);
 <style lang="scss" scoped>
 .cv {
   position: relative;
-  width: max-content;
-  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .cv__menu {
   position: absolute;
-  right: 0;
   top: -10px;
-  transform: translate(100%, 0%);
-}
-
-.cv__outside {
-  position: absolute;
-  top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  transform: translate(-100%, 0);
 }
 </style>
