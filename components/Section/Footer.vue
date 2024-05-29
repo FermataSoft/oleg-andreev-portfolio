@@ -22,6 +22,7 @@
 
   @include breakpoint(sm) {
     font-size: 1.2rem;
+    margin-top: 30px;
   }
 
   a {

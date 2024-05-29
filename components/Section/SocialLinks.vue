@@ -10,5 +10,9 @@
 <style lang="scss" scoped>
 .social-links {
   margin-top: 80px;
+
+  @include breakpoint(sm) {
+    margin-top: 40px;
+  }
 }
 </style>

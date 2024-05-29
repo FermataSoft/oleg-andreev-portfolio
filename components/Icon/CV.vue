@@ -29,14 +29,18 @@
   height: 50px;
   transition: all 0.3s ease-out;
   cursor: pointer;
+
+  @include breakpoint(md) {
+    height: 45px;
+  }
 }
 
 .icon__fill {
-  fill: $secondary;
+  fill: $secondary-variant;
 }
 
 .icon__stroke {
-  stroke: $secondary;
+  stroke: $secondary-variant;
   fill: none;
   stroke-width: 20px;
 }

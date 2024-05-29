@@ -9,24 +9,22 @@ const props = defineProps({
 
 <template>
   <div class="card">
-    <div class="card__wrapper">
-      <a :href="link" target="_blank">
-        <div class="card__image">
-          <img :src="imgSrc" alt="" />
-        </div>
-      </a>
-      <div class="card__text">
-        <h1 class="card__title">{{ title }}</h1>
-        <p
-          class="card__description"
-          v-for="(item, index) in description"
-          :key="index"
-        >
-          {{ item }}
-        </p>
+    <a class="card__image" :href="link" target="_blank">
+      <div>
+        <img :src="imgSrc" alt="" />
       </div>
+    </a>
+    <div class="card__text">
+      <h1 class="card__title">{{ title }}</h1>
+      <p
+        class="card__description"
+        v-for="(item, index) in description"
+        :key="index"
+      >
+        {{ item }}
+      </p>
     </div>
-    <a :href="link" target="_blank">
+    <a class="card__button-link" :href="link" target="_blank">
       <input class="card__button" type="button" value="Перейти на сайт" />
     </a>
   </div>
@@ -34,12 +32,17 @@ const props = defineProps({
 
 <style lang="scss" scoped>
 .card {
-  position: relative;
-  height: 750px;
-  width: 600px;
-  background-color: $color6;
+  height: auto;
+  max-width: 600px;
+  background-color: $secondary;
   border-radius: 10px;
   transition: all 0.2s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding: 0 20px 40px;
+  margin-top: 30px;
 
   @include device(screen) {
     &:hover {
@@ -50,20 +53,23 @@ const props = defineProps({
       }
     }
   }
-}
 
-.card__wrapper {
-  position: absolute;
-  top: -50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-  padding: 20px;
+  @include breakpoint(1300px) {
+    max-width: calc(50% - 30px);
+    // gap: 30px;
+    // padding-bottom: 30px;
+  }
+
+  @include breakpoint(md) {
+    max-width: 400px;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
 }
 
 .card__image {
-  width: 100%;
+  transform: translate(0, -30px);
+  margin-bottom: -40px;
   overflow: hidden;
   border-radius: 10px;
   box-shadow: 0px 20px 20px 0px rgba(37, 37, 37, 0.5);
@@ -77,33 +83,51 @@ const props = defineProps({
 
 .card__text {
   text-align: center;
-  padding: 0 40px;
-  line-height: 2.5rem;
+  padding: 0 20px;
   overflow: hidden;
-  height: 300px;
-  // background-color: #fff;
-  mask-image: linear-gradient(#000 95%, transparent);
+
+  @include breakpoint(1300px) {
+    padding: 0;
+  }
+
+  @include breakpoint(md) {
+    margin-top: 10px;
+  }
 
   .card__title {
     font-size: 2.4rem;
     font-weight: bold;
     color: $color2;
     margin-bottom: 20px;
+
+    @include breakpoint(md) {
+      font-size: 2rem;
+    }
+
+    @include breakpoint(sm) {
+      font-size: 1.8rem;
+    }
   }
   .card__description {
     text-align: center;
     font-size: 1.6rem;
     font-weight: 400;
+    line-height: 2rem;
     color: $color4;
     margin-top: 1.6rem;
+
+    @include breakpoint(md) {
+      font-size: 1.4rem;
+      line-height: 1.6rem;
+    }
   }
 }
 
+.card__button-link {
+  margin-top: auto;
+}
+
 .card__button {
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 0);
   padding: 10px 20px;
   border-radius: 25px;
   background-color: $color2;

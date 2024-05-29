@@ -23,22 +23,28 @@ const props = defineProps({
 .section-header {
   font-size: 4rem;
   font-weight: 800;
-  margin-top: 80px;
-  padding-bottom: 30px;
   color: $primary;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 50px;
+  margin-bottom: 40px;
 
-  @include breakpoint(md) {
-    font-size: 3rem;
+  @include breakpoint(lg) {
+    font-size: calc(4rem * 0.8);
   }
 
   @include breakpoint(sm) {
-    font-size: 2.2rem;
+    font-size: calc(4rem * 0.6);
+    margin-top: 30px;
     margin-bottom: 20px;
   }
 
-  &::before, &::after {
+  @include breakpoint(xs) {
+    font-size: calc(4rem * 0.5);
+  }
+
+  &::before,
+  &::after {
     padding: 0 10px;
   }
 

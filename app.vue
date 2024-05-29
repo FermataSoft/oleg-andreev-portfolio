@@ -1,7 +1,7 @@
 <template>
   <div class="app">
     <SectionHero></SectionHero>
-    <main>
+    <main class="app__main">
       <SectionAbout></SectionAbout>
       <SectionWorks></SectionWorks>
       <SectionSocialLinks></SectionSocialLinks>
@@ -15,5 +15,10 @@
   min-height: 100vh;
   background-color: $surface;
   color: $on-surface;
+}
+
+.app__main {
+  position: relative;
+  padding: 0 16px;
 }
 </style>

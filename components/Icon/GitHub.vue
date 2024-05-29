@@ -1,7 +1,7 @@
 <script setup></script>
 
 <template>
-  <svg class="icon" viewBox="0 0 98 96" xmlns="http://www.w3.org/2000/svg">
+  <svg class="icon" viewBox="0 0 99 99" xmlns="http://www.w3.org/2000/svg">
     <path
       class="icon__background"
       fill-rule="evenodd"
