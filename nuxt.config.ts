@@ -10,7 +10,7 @@ export default defineNuxtConfig({
       title: "Oleg Andreev | Front-end developer",
       charset: "utf-80",
       viewport: "width=device-width, initial-scale=1.0",
-      meta: [{ name: "description", content: "CMS Local" }],
+      meta: [{ name: "description", content: "Front-end developer portfolio website." }],
       link: [
         {
           href: "https://fonts.googleapis.com/icon?family=Material+Icons",

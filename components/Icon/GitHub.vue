@@ -13,9 +13,11 @@
 </template>
 
 <style lang="scss" scoped>
-.icon:hover {
-  .icon__background {
-    fill: #ffffff;
+@include device(screen) {
+  .icon:hover {
+    .icon__background {
+      fill: #ffffff;
+    }
   }
 }
 </style>

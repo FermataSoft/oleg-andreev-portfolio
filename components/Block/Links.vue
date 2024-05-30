@@ -42,10 +42,6 @@
       width: 36px;
       height: 36px;
     }
-
-    &:hover {
-      color: $on-surface;
-    }
     
     @keyframes hover-effect {
       0% {
