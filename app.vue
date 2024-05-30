@@ -1,12 +1,17 @@
 <template>
   <div class="app">
-    <SectionHero></SectionHero>
-    <main class="app__main">
-      <SectionAbout></SectionAbout>
-      <SectionWorks></SectionWorks>
-      <SectionSocialLinks></SectionSocialLinks>
-    </main>
-    <SectionFooter></SectionFooter>
+    <div class="app__background">
+      <BlockBackgroundLines></BlockBackgroundLines>
+    </div>
+    <div class="app__foreground">
+      <SectionHero></SectionHero>
+      <main class="app__main">
+        <SectionAbout></SectionAbout>
+        <SectionWorks></SectionWorks>
+        <SectionSocialLinks></SectionSocialLinks>
+      </main>
+      <SectionFooter></SectionFooter>
+    </div>
   </div>
 </template>
 
