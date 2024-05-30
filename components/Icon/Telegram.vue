@@ -38,8 +38,16 @@
 </template>
 
 <style scoped>
-.icon:hover .icon__background {
-  fill: url(#linearGradient-1);
-  stroke: url(#linearGradient-1);
+@include device(screen) {
+  .icon:hover {
+    .icon__background {
+      fill: url(#linearGradient-1);
+      stroke: url(#linearGradient-1);
+    }
+
+    .icon__foreground {
+      fill: #ffffff;
+    }
+  }
 }
 </style>

@@ -51,8 +51,10 @@ defineProps({
   cursor: pointer;
   transition: all 0.2s;
 
-  &:hover {
-    background-color: $secondary-variant;
+  @include device(screen) {
+    &:hover {
+      background-color: $secondary-variant;
+    }
   }
 
   &:active {

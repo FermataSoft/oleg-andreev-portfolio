@@ -28,8 +28,10 @@
   </svg>
 </template>
 
-<style scoped>
-.icon:hover {
-  fill: url(#instagram-gradient);
+<style lang="scss" scoped>
+@include device(screen) {
+  .icon:hover {
+    fill: url(#instagram-gradient);
+  }
 }
 </style>
