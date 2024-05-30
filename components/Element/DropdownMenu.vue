@@ -1,7 +1,7 @@
 <script setup>
 defineProps({
-  isActive: Boolean
-})
+  isActive: Boolean,
+});
 </script>
 
 <template>
@@ -14,7 +14,12 @@ defineProps({
           target="_blank"
           >RU</a
         >
-        <a class="dropdown-menu__item" href="" target="_blank">EN</a>
+        <a
+          class="dropdown-menu__item"
+          href="Oleg Andreev Front-end Developer CV_EN.pdf"
+          target="_blank"
+          >EN</a
+        >
       </div>
       <span class="dropdown-menu__add-element"></span>
     </div>
