@@ -6,7 +6,7 @@ const props = defineProps({
 </script>
 
 <template>
-  <h1
+  <h2
     class="section-header"
     :class="{
       'section-header--inverse-color': inverseColor,
@@ -14,14 +14,14 @@ const props = defineProps({
     }"
   >
     <slot></slot>
-  </h1>
+  </h2>
 </template>
 
 <style lang="scss" scoped>
 @import "../../assets/_vars.scss";
 
 .section-header {
-  font-size: 4rem;
+  font-size: $header2;
   font-weight: 800;
   color: $primary;
   text-align: center;
@@ -30,17 +30,17 @@ const props = defineProps({
   margin-bottom: 40px;
 
   @include breakpoint(lg) {
-    font-size: calc(4rem * 0.8);
+    font-size: $header2-lg;
   }
 
   @include breakpoint(sm) {
-    font-size: calc(4rem * 0.6);
+    font-size: $header2-sm;
     margin-top: 30px;
     margin-bottom: 20px;
   }
 
   @include breakpoint(xs) {
-    font-size: calc(4rem * 0.5);
+    font-size: $header2-xs;
   }
 
   &::before,
