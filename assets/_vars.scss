@@ -1,5 +1,44 @@
 $content-width: 1250px;
 
+// Font sizes
+$header1: 10rem;
+$header1-lg: 8rem;
+$header1-md: 6rem;
+$header1-sm: 5rem;
+$header1-xs: 4rem;
+
+$header2: 4rem;
+$header2-lg: 3.2rem;
+$header2-md: 2.8rem;
+$header2-sm: 2.4rem;
+$header2-xs: 2rem;
+
+$header3: 2.4rem;
+$header3-lg: 2.4rem;
+$header3-md: 2.2rem;
+$header3-sm: 2rem;
+$header3-xs: 1.6rem;
+
+$paragraph: 2rem;
+$paragraph-lg: 1.8rem;
+$paragraph-md: 1.6rem;
+$paragraph-sm: 1.4rem;
+$paragraph-xs: 1.2rem;
+
+$header-surface: 2.4rem;
+$header-surface-lg: 2.2rem;
+$header-surface-md: 2rem;
+$header-surface-sm: 1.8rem;
+$header-surface-xs: 1.6rem;
+
+$paragraph-surface: 1.6rem;
+$paragraph-surface-lg: 1.5rem;
+$paragraph-surface-md: 1.4rem;
+$paragraph-surface-sm: 1.3rem;
+$paragraph-surface-xs: 1.2rem;
+$control: 1.6rem;
+$control-sm: 1.4rem;
+
 @mixin breakpoint($point) {
   @if $point == xl {
     @media (min-width: 2000px) {

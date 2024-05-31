@@ -95,30 +95,43 @@ const props = defineProps({
   }
 
   .card__title {
-    font-size: 2.4rem;
+    font-size: $header3;
     font-weight: bold;
     color: $color2;
     margin-bottom: 20px;
 
     @include breakpoint(md) {
-      font-size: 2rem;
+      font-size: $header3-md;
     }
 
     @include breakpoint(sm) {
-      font-size: 1.8rem;
+      font-size: $header3-sm;
+    }
+
+    @include breakpoint(xs) {
+      font-size: $header3-xs;
     }
   }
   .card__description {
     text-align: center;
-    font-size: 1.6rem;
+    font-size: $paragraph-surface;
     font-weight: 400;
     line-height: 2rem;
-    color: $color4;
+    color: $on-secondary;
     margin-top: 1.6rem;
 
     @include breakpoint(md) {
-      font-size: 1.4rem;
+      font-size: $paragraph-surface-md;
       line-height: 1.6rem;
+    }
+
+    @include breakpoint(sm) {
+      font-size: $paragraph-surface-sm;
+      line-height: 1.6rem;
+    }
+
+    @include breakpoint(xs) {
+      font-size: $paragraph-surface-xs;
     }
   }
 }
@@ -130,11 +143,16 @@ const props = defineProps({
 .card__button {
   padding: 10px 20px;
   border-radius: 25px;
-  background-color: $color2;
+  background-color: $primary;
+  color: $on-primary;
   font-size: 1.6rem;
   font-weight: 500;
   cursor: pointer;
   transition: all 0.2s ease-out;
+
+  @include breakpoint(sm) {
+    font-size: $control-sm;
+  }
 
   @include device(screen) {
     &:hover {
