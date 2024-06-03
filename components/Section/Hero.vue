@@ -3,7 +3,19 @@
 <template>
   <header class="hero">
     <div class="hero__image">
-      <img src="/public/hero.png" alt="" />
+      <picture>
+        <source
+          type="image/webp"
+          srcset="
+            ~public/images/hero/hero@2160w.webp 1250w,
+            ~public/images/hero/hero@3840w.webp 1920w
+          "
+          sizes="
+            (max-width: 1250px) 1250px,
+            1920px"
+        />
+        <img src="~public/images/hero/hero@3840w.jpg" alt="hero__image" />
+      </picture>
     </div>
     <div class="hero__title-block">
       <h1 class="hero__title">Олег Андреев</h1>
@@ -19,8 +31,7 @@
   width: 100%;
   position: relative;
 
-  @media (max-aspect-ratio: 1/1)
-  {
+  @media (max-aspect-ratio: 1/1) {
     margin-bottom: -5vh;
   }
 }
