@@ -12,7 +12,7 @@
       </p>
       <h3>Стек:</h3>
       <p>
-        Vue 3 (+ Pinia, VueRouter, VueUse), Nuxt 3, MySQL, i18n, gsap, docker,
+        Vue 3 (+ Pinia, VueRouter, VueUse), Nuxt 3, TypeScript, MySQL, i18n, gsap, docker,
         vite, gulp, git.
       </p>
       <h3>Личные качества:</h3>
