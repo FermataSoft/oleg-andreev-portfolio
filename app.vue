@@ -22,6 +22,11 @@
   color: $on-surface;
 }
 
+.app__background {
+  height: 100%;
+  width: 100%;
+}
+
 .app__main {
   position: relative;
   padding: 0 16px;
